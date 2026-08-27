@@ -1,0 +1,21 @@
+{
+  "name": "agora-critical-minerals-intelligence",
+  "version": "0.1.0",
+  "description": "ÁGORA — Critical Minerals Intelligence System. Índice ARGOS unificando geologia, processamento, engenharia, mercado e ESG numa decisão de investimento auditável (GO/CONDICIONAL/NO-GO).",
+  "private": true,
+  "license": "SEE LICENSE IN LICENSE",
+  "author": "Time Rosa (Enzo Henrique, Mariana Maia, Maria Laura, Pedro Vieira, Savia Pessoa)",
+  "homepage": "./index.html",
+  "scripts": {
+    "start": "npx serve . -l 8000",
+    "serve": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "mineração",
+    "minerais-críticos",
+    "terras-raras",
+    "análise-de-risco",
+    "esg",
+    "hackathon"
+  ]
+}

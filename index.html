@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ÁGORA | Critical Minerals Intelligence System</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<script src="js/vendor/chart.min.js"></script>
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body class="landing-active">
+
+<div id="landingScreen">
+  <nav class="l-nav">
+    <div class="l-nav-brand"><div class="logo-icon"><img src="assets/logo.webp" alt="Ágora"></div>
+      <span>ÁGORA</span>
+    </div>
+  </nav>
+
+  <section class="l-section l-hero">
+    <div class="l-wrap">
+      <div class="logo-icon"><img src="assets/logo.webp" alt="Ágora"></div>
+      <div class="l-eyebrow reveal delay-1">Critical Minerals Intelligence System</div>
+      <p class="l-tagline reveal delay-2">Inteligência para decisões de capital em minerais críticos.</p>
+
+      <div class="l-phrase-box reveal delay-3">
+        <p class="l-phrase" id="heroPhrase"></p>
+      </div>
+
+      <div class="l-cta-row reveal delay-3">
+        <button class="l-btn-primary" onclick="enterArgos()">ENTRAR NA ÁGORA →</button>
+        <button class="l-btn-ghost" onclick="document.getElementById('lFormula').scrollIntoView({behavior:'smooth'})">Como funciona</button>
+      </div>
+    </div>
+    <div class="l-scrollcue"><span>role para saber mais</span><span class="arrow"></span></div>
+  </section>
+
+  <section class="l-section" id="lFormula">
+    <div class="l-wrap">
+      <div class="l-eyebrow reveal">A fórmula de valor</div>
+      <h2 class="reveal delay-1" style="font-family:'Playfair Display',serif; font-weight:700; font-size:clamp(26px,4vw,38px); margin:0 0 6px;">Evidências, riscos e impacto financeiro numa única decisão</h2>
+      <p class="l-tagline reveal delay-1" style="margin-bottom:6px;">O ARGOS consolida 5 pilares de um investimento em minerais críticos num veredito único, auditável e defensável perante qualquer banca.</p>
+      <div class="l-formula-row reveal delay-2">
+        <span class="l-formula-chip">EVIDÊNCIAS</span>
+        <span class="l-formula-op">+</span>
+        <span class="l-formula-chip">RISCOS</span>
+        <span class="l-formula-op">+</span>
+        <span class="l-formula-chip">IMPACTO FINANCEIRO</span>
+        <span class="l-formula-op">=</span>
+        <span class="l-formula-chip result">DECISÃO</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="l-section">
+    <div class="l-wrap">
+      <div class="l-eyebrow reveal">O problema central</div>
+      <h2 class="reveal delay-1" style="font-family:'Playfair Display',serif; font-weight:700; font-size:clamp(26px,4vw,38px); margin:0 0 14px;">A fragmentação de dados custa tempo, capital e confiança</h2>
+      <p class="l-tagline reveal delay-1">Geologia, processamento, engenharia, mercado e ESG avaliam o mesmo projeto em silos separados — cada um com sua própria planilha, sua própria linguagem e seu próprio critério de risco. O resultado é um investidor que decide sem enxergar o todo.</p>
+
+      <div class="l-problem-grid reveal delay-2">
+        <div class="l-silo" style="--sc:#8B5E34;">
+          <div class="l-silo-ic">⛏️</div>
+          <h4>1. Geologia & Lavra</h4>
+          <p>Categoria de recurso, densidade de sondagem e confiança do depósito — presos em relatórios técnicos isolados.</p>
+        </div>
+        <div class="l-silo" style="--sc:#6E5AA0;">
+          <div class="l-silo-ic">🧪</div>
+          <h4>2. Processamento & Tratamento Mineral</h4>
+          <p>Recuperação metalúrgica e maturidade da rota de processo — validadas sem visibilidade do restante da cadeia.</p>
+        </div>
+        <div class="l-silo" style="--sc:#3B6EA5;">
+          <div class="l-silo-ic">⚙️</div>
+          <h4>3. Engenharia & Infra & Supply Chain</h4>
+          <p>Maturidade de projeto (FEL) e infraestrutura disponível — avaliadas sem visibilidade do retorno financeiro.</p>
+        </div>
+        <div class="l-silo" style="--sc:#B8863B;">
+          <div class="l-silo-ic">📈</div>
+          <h4>4. Mercado & Financeiro</h4>
+          <p>Preço, resiliência e offtake — tratados à parte, quando deveriam pesar diretamente na decisão de capital.</p>
+        </div>
+        <div class="l-silo" style="--sc:#2E7D46;">
+          <div class="l-silo-ic">🌱</div>
+          <h4>5. ESG & Licenciamento & Regulatório</h4>
+          <p>Licenciamento ambiental e relacionamento comunitário — o fator que mais atrasa projetos quando ignorado cedo.</p>
+        </div>
+      </div>
+      <div class="l-arrow-down reveal delay-3">↓</div>
+      <div class="l-unified reveal delay-3">🛡 Juntos, esses 5 pilares formam o índice ARGOS · um único índice de confiança, de 0 a 100</div>
+    </div>
+  </section>
+
+  <section class="l-section">
+    <div class="l-wrap">
+      <div class="l-eyebrow reveal">Pronto para decidir</div>
+      <h2 class="reveal delay-1" style="font-family:'Playfair Display',serif; font-weight:700; font-size:clamp(28px,4.5vw,44px); margin:0 0 18px;">Conecte geologia, engenharia e mercado numa única tela.</h2>
+      <div class="l-cta-row reveal delay-2">
+        <button class="l-btn-primary" onclick="enterArgos()">ENTRAR NA ÁGORA →</button>
+      </div>
+      <div class="l-final-credit reveal delay-3">ÁGORA · TIME ROSA · HACKATHON MINING HUB 2026</div>
+    </div>
+  </section>
+</div>
+
+
+
+<div class="app">
+
+  <div class="sidebar no-print">
+    <div class="logo">
+      <div class="logo-icon"><img src="assets/logo.webp" alt="Ágora"></div>
+      <div class="logo-text"><div class="l1">Ágora</div><div class="l2">MINERAL RISK</div></div>
+    </div>
+    <div class="tab-switch">
+      <button class="active" id="nav-projects" onclick="goToProjects('all')"><span class="nav-icon">📁</span> Projetos</button>
+      <button id="nav-dashboard" onclick="setView('dashboard')"><span class="nav-icon">▦</span> Dashboard</button>
+    </div>
+    <div class="sidebar-foot">
+      <div class="theme-switch" style="display:flex; gap:4px; background:var(--surface-2); border:1px solid var(--border); border-radius:20px; padding:3px;">
+        <button id="btnDark" onclick="setTheme('dark')" style="flex:1; background:none; border:none; color:var(--text-mute); font-size:11px; padding:6px 4px; border-radius:16px; cursor:pointer; font-weight:600;">Dark</button>
+        <button id="btnLight" class="active" onclick="setTheme('light')" style="flex:1; background:var(--gold); color:#fff; border:none; font-size:11px; padding:6px 4px; border-radius:16px; cursor:pointer; font-weight:600;">Light</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="main">
+
+    <!-- DASHBOARD -->
+    <div class="view" id="view-dashboard">
+      <div class="page-head">
+        <div class="eyebrow"><span class="dot"></span>ÁGORA · INTELIGÊNCIA DE MINERAIS CRÍTICOS</div>
+        <h1>Dashboard de <span class="accent">Portfólio</span></h1>
+        <p class="subhead">Unificação de dados de Geologia, Processamento, Engenharia, Mercado e ESG — com simulação preditiva para mitigação de riscos em projetos de mineração.</p>
+      </div>
+      <div class="kpi-row" id="kpiRow"></div>
+      <div class="argos-grid" style="grid-template-columns:280px 1fr; margin-bottom:0;">
+        <div class="panel" style="text-align:center;">
+          <h2 style="justify-content:center;">Confiança do Portfólio</h2>
+          <svg width="150" height="150" viewBox="0 0 150 150">
+            <circle cx="75" cy="75" r="60" fill="none" stroke="var(--border-soft)" stroke-width="12"/>
+            <g transform="rotate(-90 75 75)">
+              <circle id="portfolioRing" cx="75" cy="75" r="60" fill="none" stroke="var(--gold)" stroke-width="12" stroke-linecap="round"/>
+            </g>
+            <text x="75" y="80" text-anchor="middle" font-family="Playfair Display, serif" font-weight="700" font-size="28" fill="var(--text)" id="portfolioNum">0</text>
+          </svg>
+          <div class="gate-legend" id="gateLegend"></div>
+        </div>
+        <div class="panel">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:8px;">
+            <h2 style="margin:0;">Projetos em Análise</h2>
+            <span class="link-btn" onclick="setView('projects')">Ver todos →</span>
+          </div>
+          <div id="dashProjList"></div>
+        </div>
+      </div>
+      <div class="panel">
+        <h2>Risco × Retorno do Portfólio <span style="font-weight:400; color:var(--text-mute); font-size:11px; font-family:'Inter',sans-serif;">— todos os projetos</span></h2>
+        <div class="chart-box" style="height:260px;"><canvas id="portfolioRRCanvas"></canvas></div>
+        <div class="quad-caption">Cada ponto é um projeto do portfólio. Eixo X: risco composto (100 − ARGOS). Eixo Y: NPV estimado (US$M, sem choque de mercado).</div>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="view active" id="view-projects">
+      <div class="page-head">
+        <div class="eyebrow"><span class="dot"></span>ÁGORA · PORTFÓLIO</div>
+        <h1>Projetos</h1>
+        <p class="subhead">Gerencie os projetos de minerais críticos e seus dados integrados de Geologia, Processamento, Engenharia, Mercado e ESG.</p>
+      </div>
+      <div class="toolbar">
+        <div class="search">🔍 <input type="text" id="searchInput" placeholder="Buscar por nome ou mineral..." oninput="renderProjects()"></div>
+        <button class="btn btn-primary" onclick="openNewProjectModal()">+ Novo Projeto</button>
+      </div>
+      <div class="filter-bar" id="projFilterBar"></div>
+      <div class="proj-grid" id="projGrid"></div>
+    </div>
+
+    <!-- DETAIL -->
+    <div class="view" id="view-detail">
+      <span class="link-btn" onclick="setView('projects')">← Voltar para Projetos</span>
+
+      <div class="top-header" style="margin-top:14px;">
+        <div class="brand-block">
+          <div class="l1" id="detailProjName">Projeto</div>
+          <div class="l2" id="detailProjMeta">Critical Minerals Intelligence System — Time Rosa · Hackathon Mining Hub 2026</div>
+        </div>
+        <div class="header-tools no-print">
+          <div class="icon-pill">
+            <div class="theme-switch" style="display:flex; gap:4px; background:var(--surface-2); border:1px solid var(--border); border-radius:20px; padding:3px;">
+              <button id="btnDark2" onclick="setTheme('dark')" style="flex:1; background:none; border:none; color:var(--text-mute); font-size:11px; padding:7px 10px; border-radius:16px; cursor:pointer; font-weight:600;">☾ Dark</button>
+              <button id="btnLight2" class="active" onclick="setTheme('light')" style="flex:1; background:var(--gold); color:#fff; border:none; font-size:11px; padding:7px 10px; border-radius:16px; cursor:pointer; font-weight:600;">☀ Light</button>
+            </div>
+          </div>
+          <button class="btn btn-gold" onclick="exportCSV()">⇩ CSV</button>
+          <button class="btn btn-gold" onclick="window.print()">🖶 PDF</button>
+          <button class="btn btn-danger-outline" onclick="deleteCurrentProject()">Excluir</button>
+        </div>
+      </div>
+      <hr class="header-divider no-print">
+      <div class="presets-row no-print">
+        <span class="presets-label">⚙ QUICK PRESETS</span>
+        <button class="preset-pill" onclick="loadPreset('litio')">Lítio (Vale do Jequitinhonha)</button>
+        <button class="preset-pill" onclick="loadPreset('terras')">Terras Raras (Alto Risco)</button>
+      </div>
+
+      <div class="decision-banner">
+        <div class="decision-top">
+          <div>
+            <div class="decision-label">Decisão</div>
+            <div class="decision-value" id="gateBadge">—</div>
+          </div>
+          <div>
+            <div class="decision-score-label">Score Composto (ARGOS)</div>
+            <div class="decision-score" id="stratNum">0<span>/100</span></div>
+          </div>
+        </div>
+        <div class="decision-reason" id="decisionReason"></div>
+        <div class="gate-scale">✓ <b>GO</b> ≥ 75&nbsp;&nbsp;·&nbsp;&nbsp;⚠ <b>CONDICIONAL</b> 50–74&nbsp;&nbsp;·&nbsp;&nbsp;✕ <b>NO-GO</b> &lt; 50 (ou qualquer variável crítica abaixo do limite mínimo)</div>
+      </div>
+
+      <div class="panel">
+        <div class="argos-grid">
+          <div>
+            <div class="argos-label">Testemunho de Risco</div>
+            <div class="argos-title">ARGOS</div>
+            <p class="argos-desc">O índice ARGOS mede os 5 fundamentos técnicos, operacionais e socioambientais do projeto em tempo real, consolidando-os num único coeficiente de confiança.</p>
+          </div>
+          <div class="argos-visual">
+            <div class="gauge-wrap">
+              <svg width="220" height="150" viewBox="0 0 220 150">
+                <path d="M20,120 A90,90 0 0 1 110,30" fill="none" stroke="var(--danger)" stroke-width="14" stroke-linecap="round" opacity="0.85"/>
+                <path d="M110,30 A90,90 0 0 1 173.6,56.4" fill="none" stroke="var(--warn)" stroke-width="14" opacity="0.85"/>
+                <path d="M173.6,56.4 A90,90 0 0 1 200,120" fill="none" stroke="var(--ok)" stroke-width="14" stroke-linecap="round" opacity="0.85"/>
+                <circle cx="110" cy="120" r="6" fill="var(--navy)"/>
+                <line id="gaugeNeedle" x1="110" y1="120" x2="20" y2="120" stroke="var(--navy)" stroke-width="3" stroke-linecap="round"/>
+              </svg>
+              <div class="gauge-num" id="gaugeNum">0.0<span>/100</span></div>
+            </div>
+            <div class="strat-cyl" id="stratCyl"><div class="sheen"></div></div>
+            <div class="argos-legend" id="argosLegend"></div>
+          </div>
+        </div>
+        <div class="argos-params">
+          <div class="argos-params-label">✎ Digite os 5 parâmetros do ARGOS — ajusta as 2 variáveis de cada fundamento de uma vez</div>
+          <div class="argos-params-grid" id="argosParamsGrid"></div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>Diagnóstico &amp; Parecer da Análise</h2>
+        <div class="diag-grid">
+          <div class="heat-grid" id="heatGrid"></div>
+          <div class="radar-wrap">
+            <div class="chart-box" style="height:220px;"><canvas id="radarCanvas"></canvas></div>
+            <p id="radarText" class="radar-text"></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>5 Etapas da Cadeia <span style="font-weight:400; color:var(--text-mute); font-size:11px; font-family:'Inter',sans-serif;">— detalhamento por variável</span></h2>
+        <div class="hint">Ajuste os parâmetros de cada etapa ou edite a tabela detalhada abaixo — tudo está sincronizado e recalcula o ARGOS, o gate e todos os gráficos em tempo real.</div>
+        <div class="stage-grid" id="stageGrid"></div>
+      </div>
+
+      <div class="panel">
+        <h2>Matriz de Calor <span style="font-weight:400; color:var(--text-mute); font-size:11px; font-family:'Inter',sans-serif;">— matriz editável de incertezas</span></h2>
+        <div class="hint">Edite diretamente a tabela. O índice ARGOS é recalculado por <b>média ponderada</b>. Marque "Crítica" para impedir GO quando a nota ficar abaixo do limite mínimo.</div>
+        <div class="table-toolbar no-print">
+          <button class="btn btn-sm" onclick="addVariable()">+ Adicionar variável</button>
+          <button class="btn btn-sm" onclick="normalizeWeights()">Normalizar pesos para 100%</button>
+          <button class="btn btn-sm" onclick="restoreExample()">Restaurar exemplo</button>
+          <button class="btn btn-sm" onclick="exportConfig()">Exportar configuração</button>
+          <button class="btn btn-sm" onclick="document.getElementById('importFile').click()">Importar configuração</button>
+          <input type="file" id="importFile" accept="application/json" style="display:none" onchange="handleImport(event)">
+          <button class="btn btn-sm" onclick="openSheetsModal()">🔗 Google Sheets</button>
+        </div>
+        <div class="weight-warning" id="weightWarning"></div>
+        <div id="groupBlocks"></div>
+      </div>
+
+      <div class="panel">
+        <h2>Análise Preditiva <span class="tag-ai">IA · ESTOCÁSTICO · PRESCRITIVO</span></h2>
+        <div class="predict-grid">
+          <div class="predict-cell">
+            <h3>🩹 Assistente de Mitigação</h3>
+            <p class="sensitivity-line" id="sensitivityLine"></p>
+            <div class="mit-grid" id="mitGrid"></div>
+          </div>
+          <div class="predict-cell">
+            <h3>🎲 Simulação de Monte Carlo</h3>
+            <button class="btn btn-ai no-print" onclick="runMonteCarlo()" style="margin-bottom:14px;">▶ Rodar Simulação (1.000 iterações)</button>
+            <div class="mc-result">
+              <div class="mc-prob" id="mcProbBig">—</div>
+              <div class="mc-prob-lbl">probabilidade de o projeto manter NPV positivo sob oscilações de preço (±30%) e OPEX (-15% a +25%)</div>
+            </div>
+            <div class="chart-box" style="height:180px;"><svg id="mcCanvas" width="100%" height="100%" viewBox="0 0 460 200" preserveAspectRatio="none"></svg></div>
+          </div>
+          <div class="predict-cell">
+            <h3>📈 Risco × Retorno <span style="font-weight:400; color:var(--text-mute); font-size:10.5px; font-family:'Inter',sans-serif;">— nuvem Monte Carlo + As-Is/To-Be</span></h3>
+            <div class="chart-box" style="height:200px;"><svg id="rrCanvas" width="100%" height="100%" viewBox="0 0 460 220" preserveAspectRatio="none"></svg></div>
+            <div class="quad-caption">Pontos claros: 1.000 simulações de estresse. Eixo X: risco (100 − ARGOS). Eixo Y: NPV (US$M). "Otimizado" aplica a mitigação às 2 variáveis mais fracas.</div>
+          </div>
+          <div class="predict-cell">
+            <h3>⇄ Comparador de Cenários (A/B)</h3>
+            <div class="chart-box" style="height:150px; margin-bottom:12px;"><canvas id="comparadorChart"></canvas></div>
+            <div class="comparador-grid" id="comparadorGrid"></div>
+            <div class="comp-delta" id="comparadorDelta"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h2>Avaliação SWOT <span style="font-weight:400; color:var(--text-mute); font-size:11px; font-family:'Inter',sans-serif;">— gerada a partir dos dados atuais do projeto</span></h2>
+        <div class="hint">Forças e fraquezas vêm da matriz de incertezas; oportunidades vêm da maior alavanca de mitigação e do cenário otimizado; ameaças vêm do simulador financeiro e da volatilidade de mercado.</div>
+        <div class="swot-grid" id="swotGrid"></div>
+      </div>
+
+      <div class="panel">
+        <h2>Relógio de Custo do Atraso &amp; Simulador de Estresse (NPV/IRR)</h2>
+        <div class="sim-grid">
+          <div class="sim-field"><label>CAPEX (USD)</label><input type="number" id="sim-capex" oninput="onFinancialChange()"></div>
+          <div class="sim-field"><label>OPEX anual (USD)</label><input type="number" id="sim-opex" oninput="onFinancialChange()"></div>
+          <div class="sim-field"><label>Preço de referência (USD/t)</label><input type="number" id="sim-price" oninput="onFinancialChange()"></div>
+          <div class="sim-field"><label>Produção anual (t)</label><input type="number" id="sim-production" oninput="onFinancialChange()"></div>
+        </div>
+        <div class="shock-row">
+          <div class="field"><label>Choque de preço <span id="v-pshock">0%</span></label><input type="range" id="sim-pshock" min="-50" max="50" value="0" oninput="onFinancialChange()"></div>
+          <div class="field"><label>Choque de OPEX <span id="v-oshock">0%</span></label><input type="range" id="sim-oshock" min="-30" max="60" value="0" oninput="onFinancialChange()"></div>
+        </div>
+        <div class="sim-results">
+          <div class="result-box"><div class="rl">NPV (10 anos, 10% desconto)</div><div class="rv" id="npvOut">—</div></div>
+          <div class="result-box"><div class="rl">IRR aproximado</div><div class="rv" id="irrOut">—</div></div>
+        </div>
+        <div class="delay-box">
+          <div style="font-size:22px;">⏱</div>
+          <div><div class="delay-num" id="delayNum">—</div>
+          <div class="delay-lbl">fluxo de caixa não realizado por mês de travamento em licenciamento ou gargalo de engenharia</div></div>
+        </div>
+      </div>
+
+      <div class="print-only" id="printSummary"></div>
+
+      <footer>ÁGORA · Time Rosa · Hackathon Mining Hub 2026 — protótipo de MVP para o Desafio 4 (Minerais Críticos)</footer>
+    </div>
+
+  </div>
+</div>
+
+<div class="modal-overlay" id="newProjectModal" onclick="if(event.target===this) closeModal()">
+  <div class="modal">
+    <h3>Novo projeto</h3>
+    <div class="field-row"><label>Nome do projeto</label><input type="text" id="np-name" placeholder="Ex: Projeto Serra do Lítio"></div>
+    <div class="two-col">
+      <div class="field-row"><label>Mineral</label>
+        <select id="np-mineral">
+          <option>Lítio</option><option>Terras Raras</option><option>Cobalto</option><option>Manganês</option>
+          <option>Grafite</option><option>Cobre</option><option>Níquel</option><option>Outro</option>
+        </select>
+      </div>
+      <div class="field-row"><label>País</label><input type="text" id="np-country" value="Brasil"></div>
+    </div>
+    <div class="field-row"><label>Fase</label>
+      <select id="np-phase">
+        <option>Exploração</option><option>Prefeasibility</option><option>Feasibility</option><option>Construção</option><option>Operação</option>
+      </select>
+    </div>
+    <div class="two-col">
+      <div class="field-row"><label>CAPEX (USD)</label><input type="number" id="np-capex" value="80000000"></div>
+      <div class="field-row"><label>OPEX anual (USD)</label><input type="number" id="np-opex" value="12000000"></div>
+    </div>
+    <div class="two-col">
+      <div class="field-row"><label>Preço ref. (USD/t)</label><input type="number" id="np-price" value="15000"></div>
+      <div class="field-row"><label>Produção anual (t)</label><input type="number" id="np-production" value="2000"></div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn" onclick="closeModal()">Cancelar</button>
+      <button class="btn btn-primary" onclick="createProject()">Criar projeto</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="sheetsModal" onclick="if(event.target===this) closeSheetsModal()">
+  <div class="modal" style="max-width:520px;">
+    <h3>Conectar ao Google Sheets</h3>
+    <p style="font-size:12px; color:var(--text-soft); line-height:1.55; margin:0 0 14px;">
+      Publique sua planilha como CSV (Arquivo → Compartilhar → Publicar na Web → formato CSV) usando as colunas
+      <b>Variavel, Grupo, Nota, Peso, Critica, LimiteMinimo</b>. Cole o link publicado abaixo, ou cole os dados diretamente na caixa de texto.
+    </p>
+    <div class="field-row"><label>Link do CSV publicado</label><input type="text" id="sheets-url" placeholder="https://docs.google.com/spreadsheets/d/e/.../pub?output=csv"></div>
+    <div class="modal-actions" style="justify-content:flex-start; margin-top:0; margin-bottom:14px;">
+      <button class="btn btn-sm" onclick="tryFetchSheetsURL()">Buscar automaticamente</button>
+      <button class="btn btn-sm" onclick="window.open('https://sheets.new','_blank')">Abrir planilha nova ↗</button>
+    </div>
+    <div class="field-row"><label>...ou cole os dados CSV aqui</label>
+      <textarea id="sheets-paste" rows="6" placeholder="Variavel,Grupo,Nota,Peso,Critica,LimiteMinimo"></textarea>
+    </div>
+    <div class="modal-actions">
+      <button class="btn" onclick="closeSheetsModal()">Cancelar</button>
+      <button class="btn btn-primary" onclick="importFromPastedCSV()">Importar dados colados</button>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ============ FLOATING SOCRATES CHATBOT ============ -->
+<button class="socrates-fab" id="socratesFab" onclick="openSocrates()" title="Assistente ARGOS" aria-label="Abrir assistente ARGOS">
+  <img src="assets/socrates-avatar.png" alt="">
+  <span class="socrates-fab-ring"></span>
+</button>
+
+<div class="modal-overlay" id="socratesModal" onclick="if(event.target===this) closeSocrates()">
+  <div class="socrates-modal">
+    <button class="socrates-close" onclick="closeSocrates()" aria-label="Fechar">✕</button>
+    <div class="socrates-3d-col">
+      <div id="socratesCanvasWrap"><canvas id="socratesCanvas"></canvas></div>
+      <div class="socrates-3d-caption">arraste para girar</div>
+    </div>
+    <div class="socrates-chat-col">
+      <div class="socrates-chat-head">
+        <div class="socrates-chat-title">Assistente ARGOS</div>
+        <div class="socrates-chat-sub">Pergunte sobre o que está nesta tela — eu leio os dados da página pra você.</div>
+      </div>
+      <div class="copilot-messages" id="socratesMessages">
+        <div class="copilot-msg copilot-msg-bot">Saudações. Sou o assistente da ÁGORA — pergunte-me sobre o que vê nesta tela: um índice, um gate, um risco. Eu leio os dados e te devolvo clareza, à maneira socrática.</div>
+      </div>
+      <div class="copilot-input-row">
+        <input type="text" id="socratesInput" placeholder="O que você quer entender?" onkeydown="if(event.key==='Enter') askSocrates()">
+        <button class="btn btn-ai" onclick="askSocrates()">Perguntar</button>
+      </div>
+      <div class="copilot-hint">Diagnóstico técnico automático. Para validação, laudos ou consultoria multidisciplinar, procure a <b>Athena</b>, detentora da plataforma ÁGORA.</div>
+    </div>
+  </div>
+</div>
+
+<script src="js/vendor/three.min.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
