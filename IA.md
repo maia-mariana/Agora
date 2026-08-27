@@ -48,7 +48,7 @@ Não existe suíte de testes automatizados versionada neste repositório (ver `d
 
 **A lacuna reconhecida**: essa validação sempre foi *exploratória e manual* — eu decidindo o que testar a cada rodada, sem uma suíte que rode sozinha e acuse regressão automaticamente. Isso significa que qualquer característica que eu não pensei em testar explicitamente pode ter regressões não detectadas. É o item de maior prioridade na lista de melhoria do projeto, tanto no `docs/ROADMAP.md` quanto aqui.
 
-## O que eu faria com mais tempo (do ponto de vista de quem construiu)
+## O que eu faria com mais tempo...
 
 - **Uma suíte de testes real**, não só validação manual repetida — principalmente sobre `gateFor()`, que é a lógica mais crítica de negócio e a que mais mudou de forma sem que eu tivesse uma rede de segurança automática.
 - **Fixar cedo, por escrito, a distinção de nomenclatura** (produto vs. índice, e qualquer outra dupla de nomes do domínio) antes de escrever a primeira tela, não depois de já ter espalhado o erro pela interface.
